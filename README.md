@@ -4,13 +4,13 @@
 [![Greasy Fork](https://img.shields.io/badge/Install-Greasy%20Fork-orange.svg)](https://update.greasyfork.org/scripts/571519/HA%20menu%20fix.user.js)
 
 ### 🔴 The Problem
-Recent updates in **Home Assistant (Core 2025.x - 2026.x)** introduced new UI components (Web Awesome / Shoelace). Due to strict CSS isolation (`overflow: hidden` and `contain: strict`) within the Shadow DOM of data tables and virtualized lists, many dropdown menus and settings buttons are:
+Recent updates in **Home Assistant (Core 2025.x - 2026.x)** introduced new UI components (Web Awesome). Due to strict CSS isolation (`overflow: hidden` and `contain: strict`) within the Shadow DOM of data tables and virtualized lists, many dropdown menus and settings buttons are:
 * **Cut off** by row boundaries or table containers.
 * **Unclickable** or hidden behind other elements.
 * **Invisible** on mobile devices or legacy browsers (Legacy Chrome/Firefox).
 
 ### ✨ Possible solution until the developers are fixing this issue 
-This script is a **lightweight, recursive Shadow DOM styles**. It automatically traverses the Home Assistant interface and injects specific CSS rules into every Shadow Root to:
+This script is a **lightweight, recursive Shadow DOM styler**. It automatically traverses the Home Assistant interface and injects specific CSS rules into every Shadow Root to:
 1. **Break overflow barriers** of tables and virtualizers.
 2. **Force high-priority `z-index`** on all known HA dropdown components.
 
