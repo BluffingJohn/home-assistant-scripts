@@ -50,7 +50,7 @@ If you don't want to modify your HA server files, you can use a browser extensio
 ## 🧪 Compatibility
 
   * **Tested on:** Home Assistant Core 2026.3.4 (Web Awesome UI)
-  * **Browsers:** Chrome (v109+), Firefox (v115+), Edge, Safari, iOS/Android Companion App.
+  * **Browsers:** Chrome (v109+), Firefox (v115+), Edge (v109+), Android App.
 
 ## 🐞 Debug Mode
 
