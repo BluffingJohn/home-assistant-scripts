@@ -9,7 +9,7 @@ Install:
 2) Copy/Create this file to "/homeassistant/www/ha-menu-fix.js" using File Editor (HA add-on) or WinSCP/etc.
 	If "/homeassistant/www/" directory doesn't exist create it manually.
 
-3-a) Edit "/homeassistant/configuration.yaml" using File Editor/etc and add the folowing 4 lines.
+3a) [Recommended method] Edit "/homeassistant/configuration.yaml" using File Editor/etc and add the folowing 4 lines.
 	If there already exist a "frontend:" section defined just use that and add the "extra_module_url:"
 
 # Add fix to HA Web Awesome bugs
@@ -17,8 +17,8 @@ frontend:
   extra_module_url:
     - /local/ha-menu-fix.js?v=1.0.2
 
-3-b) Register this resource to the Settings -> Dashboards -> ... -> Resources -> Add resource
-	!Warning: This way it will be loaded only in Dashboards and not in Settings/etc!
+3b) [Alternative method] Register this resource to the Settings -> Dashboards -> ... -> Resources -> Add resource
+	!Warning: This way it will be loaded only in Dashboards and never in Settings/etc. Use '3a' for better performance!
 	URL: /local/ha-menu-fix.js?v=1.0.2
 	Type: JavaScript module
 
